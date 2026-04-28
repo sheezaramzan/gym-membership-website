@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.navbar {
+  background-color: #2c1654; /* dark purple */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #b39ddb;
+}
+
+.cta button {
+  background: #7b2ff7;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.cta button:hover {
+  opacity: 0.8;
+}
+
+.page {
+  padding: 30px;
+}
+
+/* CARD SYSTEM */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: var(--bg-card);
+  padding: 20px;
+  width: 250px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 1px solid var(--border-primary-color);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: var(--brand-secondary-color);
+}
+
+.card img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+}
